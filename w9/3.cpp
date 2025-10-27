@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+
+int f1(int a, int b);
+
+void f2(int a, int b){
+    cout << f1(a,b);
+}
+
+int main(){
+
+    int k = f1(2,3);
+    cout << k << endl;
+
+    f2(2,3);
+
+    return 0;
+}
+
+int f1(int a, int b){
+    int c = a + b;
+    return c;
+}
